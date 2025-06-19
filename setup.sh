@@ -8,5 +8,9 @@ echo -n "ACCOUNT:"
 read ac
 echo -n "PASSWORD:"
 read ps
-echo "ac=$ac" >./.env
-echo "ps=$ps" >>./.env
+envfile=$SCRIPT_DIR/.env
+echo "ac=$ac" >$envfile
+echo "ps=$ps" >>$envfile
+
+echo "export PATH=\$PATH:$SCRIPT_DIR" >>~/.bashrc
+source ~/.bashrc
