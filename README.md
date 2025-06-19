@@ -3,7 +3,10 @@ xmum_download is a Cli tool for download slides in XMUM moodle.
 
 ## Pre-requirement
 `fzf` is required. You may check this link https://github.com/junegunn/fzf to download it.
-
+after clone this project, you should execute
+```pwsh
+pip install -r requirements.txt
+```
 ## Startup
 
 1. Create a pwsh script called 'xmum.ps1' in the same directory of the folder to launch the tool and add it into the environment path
