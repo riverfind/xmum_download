@@ -13,7 +13,7 @@ echo "ac=$ac" >$envfile
 echo "ps=$ps" >>$envfile
 echo
 
-if [[ ":$PATH:" != *":/usr/local/bin:"* ]]; then
+if [[ ":$PATH:" != *":$SCRIPT_DIR:"* ]]; then
   echo "export PATH=\$PATH:$SCRIPT_DIR" >>~/.bashrc
   source ~/.bashrc
 fi
